@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EfficientTimeseriesQueries.iml" filepath="$PROJECT_DIR$/EfficientTimeseriesQueries.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ymir/ymir.iml" filepath="$PROJECT_DIR$/ymir/ymir.iml" />
     </modules>
   </component>
 </project>

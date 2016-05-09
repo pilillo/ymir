@@ -1,4 +1,4 @@
-package org.altervista.monacchi.efficienttimeseriesqueries.timeseries;
+package com.github.pilillo.ymir.timeseries;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import org.altervista.monacchi.efficienttimeseriesqueries.model.TimeserieSerializer;
+import com.github.pilillo.ymir.model.TimeserieSerializer;
 
 public class TSManager {
 

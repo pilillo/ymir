@@ -1,4 +1,4 @@
-package org.altervista.monacchi.efficienttimeseriesqueries.model.realmio;
+package monacchi.altervista.org.ymir.model.realmio;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import org.altervista.monacchi.efficienttimeseriesqueries.model.TimeserieSerializer;
+import monacchi.altervista.org.ymir.model.TimeserieSerializer;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmObject;

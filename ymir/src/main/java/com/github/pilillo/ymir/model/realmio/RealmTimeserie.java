@@ -1,4 +1,4 @@
-package org.altervista.monacchi.efficienttimeseriesqueries.model.realmio;
+package com.github.pilillo.ymir.model.realmio;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;

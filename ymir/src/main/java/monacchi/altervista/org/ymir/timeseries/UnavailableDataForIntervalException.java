@@ -1,4 +1,4 @@
-package org.altervista.monacchi.efficienttimeseriesqueries.timeseries;
+package monacchi.altervista.org.ymir.timeseries;
 
 public class UnavailableDataForIntervalException extends Exception {
     public UnavailableDataForIntervalException(){
