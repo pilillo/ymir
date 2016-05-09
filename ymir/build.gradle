@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+//apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 23
@@ -18,9 +20,46 @@ android {
     }
 }
 
+// http://stackoverflow.com/questions/33002558/android-studio-how-to-build-an-aar-file-with-gradle-that-has-remote-dependencies
+/*
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.groupId = 'com.github.pilillo'
+        pom.artifactId = ' ymir-ts-management'
+        pom.version = android.defaultConfig.versionName
+
+        repository(url: "file:./releases/")
+    }
+}
+*/
+
+// http://stackoverflow.com/questions/26874498/maven-publish-android-library-with-aar-and-source-jar
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "source"
+}
+
+publishing {
+    publications {
+        ymir(MavenPublication) {
+            groupId 'com.github.pilillo'
+            artifactId 'ymir-ts-management'
+            version android.defaultConfig.versionName
+            artifact(sourceJar)
+            artifact("$buildDir/outputs/aar/ymir-release.aar")
+        }
+    }
+    repositories {
+        maven {
+            url "$buildDir/repo"
+        }
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'io.realm:realm-android:0.84.1'
 }
+apply plugin: 'maven'
