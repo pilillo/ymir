@@ -1,8 +1,11 @@
 package com.github.pilillo.efficienttimeseriesqueries;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.github.pilillo.ymir.model.realmio.RealmIO;
+import com.github.pilillo.ymir.timeseries.TSManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,9 +17,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Iterator;
 import java.util.TreeMap;
-
-import com.github.pilillo.ymir.model.realmio.RealmIO;
-import com.github.pilillo.ymir.timeseries.TSManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Iterator<String> keyIterator = entry.keys();
                 while (keyIterator.hasNext()) {
-                    String key = (String) keyIterator.next();
+                    String key = keyIterator.next();
 
                     if (!key.equals("dateAndTime")) {
                         //LinkedHashMap<String,Double> series = new LinkedHashMap<String, Double>();

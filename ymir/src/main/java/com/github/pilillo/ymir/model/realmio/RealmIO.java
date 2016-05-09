@@ -2,6 +2,8 @@ package com.github.pilillo.ymir.model.realmio;
 
 import android.content.Context;
 
+import com.github.pilillo.ymir.model.TimeserieSerializer;
+
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -9,7 +11,6 @@ import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import com.github.pilillo.ymir.model.TimeserieSerializer;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmObject;

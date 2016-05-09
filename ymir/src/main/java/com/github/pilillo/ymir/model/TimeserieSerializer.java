@@ -5,7 +5,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 public interface TimeserieSerializer {
-    public void serializeTimeserie(String name, SortedMap<Long,Double> timeserie);
-    public TreeMap<Long,Double> getTimeserieFromDatabase(String name);
-    public List<String> getTimeseriesNames();
+    void serializeTimeserie(String name, SortedMap<Long, Double> timeserie);
+    TreeMap<Long,Double> getTimeserieFromDatabase(String name);
+    List<String> getTimeseriesNames();
 }

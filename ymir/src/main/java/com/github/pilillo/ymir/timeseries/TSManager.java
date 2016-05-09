@@ -1,13 +1,13 @@
 package com.github.pilillo.ymir.timeseries;
 
+import com.github.pilillo.ymir.model.TimeserieSerializer;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.SortedMap;
 import java.util.TreeMap;
-
-import com.github.pilillo.ymir.model.TimeserieSerializer;
 
 public class TSManager {
 
