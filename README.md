@@ -24,4 +24,5 @@ Further informations is available here:
 **Importing the library in your Android project**
 ```
 compile 'com.github.pilillo:ymir-ts-management:0.0.1'
+compile 'io.realm:realm-android:0.84.1'
 ```
