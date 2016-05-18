@@ -22,6 +22,8 @@ Further informations is available here:
 
 
 **Importing the library in your Android project**
+Ymir is part of the jcenter maven repository, which is the default repo in all newest Android projects.
+This means you can import Ymir by simply specifying the following dependencies.
 ```
 compile 'com.github.pilillo:ymir-ts-management:0.0.1'
 compile 'io.realm:realm-android:0.84.1'
