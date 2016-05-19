@@ -6,6 +6,8 @@
 As such, he represents the origin of time and nature.
 
 [ ![Download](https://api.bintray.com/packages/andrea/maven/ymir-ts-management/images/download.svg) ](https://bintray.com/andrea/maven/ymir-ts-management/_latestVersion)
+(https://api.codacy.com/project/badge/grade/b738700bad0a4b6da14e06c0dd508a21)](https://www.codacy.com/app/andrea-monacchi/ymir) [![codecov.io]
+
 
 **Lightweight database storage**
 Ymir uses the Realm.io mobile database for its persistency. Realm offers a replacement for the well known SQLite file database. In particular, it favours speed and simplicity, as well as portability. More [here](https://realm.io/).
