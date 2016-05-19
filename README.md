@@ -6,8 +6,8 @@
 As such, he represents the origin of time and nature.
 
 [ ![Download](https://api.bintray.com/packages/andrea/maven/ymir-ts-management/images/download.svg) ](https://bintray.com/andrea/maven/ymir-ts-management/_latestVersion)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1070260a2bb74430a977a44416a26299)](https://www.codacy.com/app/andrea-monacchi/ymir?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pilillo/ymir&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/pilillo/ymir.svg?branch=master)](https://travis-ci.org/pilillo/ymir)
 
 **Lightweight database storage**
 Ymir uses the Realm.io mobile database for its persistency. Realm offers a replacement for the well known SQLite file database. In particular, it favours speed and simplicity, as well as portability. More [here](https://realm.io/).
